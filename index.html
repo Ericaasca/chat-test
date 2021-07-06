@@ -24,28 +24,8 @@
     <script type="text/javascript" src="blowfish.js"></script>
 
     <script>
-      var socket = io();
-      var bf = new Blowfish("chave secreta");
-      var messages = document.getElementById('messages');
-      var form = document.getElementById('form');
-      var input = document.getElementById('input');
-
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        if (input.value) {
-          socket.emit('chat message', input.value);
-          input.value = '';
-        }
-      });
-
-      socket.on('chat message', function(msg) {
-        var item = document.createElement('li');
-        console.log(msg);
-        msg = bf.decrypt(msg);
-        item.textContent = msg; 
-        messages.appendChild(item);
-        window.scrollTo(0, document.body.scrollHeight);
-      });
+      var _0x302c=['submit','751001UcgBra','137bRtHVc','scrollHeight','form','469144GzvuUQ','body','1MaJqHl','messages','2938JAXgVK','chat\x20message','4bqArGZ','log','appendChild','getElementById','chave\x20secreta','1EmAHCH','createElement','541FFRFSb','43Mqhbjo','preventDefault','textContent','324758stYMCF','decrypt','21443aWHwPF','value','188223LXAvID','3860gMsvgM','addEventListener'];var _0x30ec41=_0x5b1d;(function(_0x35783a,_0x167137){var _0x4241c3=_0x5b1d;while(!![]){try{var _0x3c3d98=parseInt(_0x4241c3(0x11f))+parseInt(_0x4241c3(0x115))*-parseInt(_0x4241c3(0x12d))+parseInt(_0x4241c3(0x113))*parseInt(_0x4241c3(0x125))+-parseInt(_0x4241c3(0x121))*parseInt(_0x4241c3(0x11b))+-parseInt(_0x4241c3(0x12c))*-parseInt(_0x4241c3(0x123))+parseInt(_0x4241c3(0x12a))*-parseInt(_0x4241c3(0x117))+parseInt(_0x4241c3(0x11c))*-parseInt(_0x4241c3(0x118));if(_0x3c3d98===_0x167137)break;else _0x35783a['push'](_0x35783a['shift']());}catch(_0x363abd){_0x35783a['push'](_0x35783a['shift']());}}}(_0x302c,0xec375));function _0x5b1d(_0x55eeeb,_0x450f79){return _0x5b1d=function(_0x302c31,_0x5b1df0){_0x302c31=_0x302c31-0x111;var _0x382c01=_0x302c[_0x302c31];return _0x382c01;},_0x5b1d(_0x55eeeb,_0x450f79);}var socket=io(),bf=new Blowfish(_0x30ec41(0x129)),messages=document[_0x30ec41(0x128)](_0x30ec41(0x122)),form=document[_0x30ec41(0x128)](_0x30ec41(0x11e)),input=document[_0x30ec41(0x128)]('input');form[_0x30ec41(0x119)](_0x30ec41(0x11a),function(_0x551e1f){var _0xd15372=_0x30ec41;_0x551e1f[_0xd15372(0x111)](),input[_0xd15372(0x116)]&&(socket['emit'](_0xd15372(0x124),input['value']),input[_0xd15372(0x116)]='');}),socket['on']('chat\x20message',function(_0x1ffb23){var _0x17e066=_0x30ec41,_0x106ef8=document[_0x17e066(0x12b)]('li');console[_0x17e066(0x126)](_0x1ffb23),_0x1ffb23=bf[_0x17e066(0x114)](_0x1ffb23),_0x106ef8[_0x17e066(0x112)]=_0x1ffb23,messages[_0x17e066(0x127)](_0x106ef8),window['scrollTo'](0x0,document[_0x17e066(0x120)][_0x17e066(0x11d)]);});
+      ;
     </script>
   </body>
 </html>
