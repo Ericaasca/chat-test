@@ -5,9 +5,22 @@
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7",
-    "socket.io": "^4.1.2"
+    "socket.io": "^4.1.2",
+    "javascript-blowfish": "^1.0.4"
   },
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ericaasca/chat-test.git"
+  },
+  "author": "Erica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ericaasca/chat-test/issues"
+  },
+  "homepage": "https://github.com/Ericaasca/chat-test#readme",
+  "devDependencies": {}
 }
